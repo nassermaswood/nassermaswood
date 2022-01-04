@@ -1,0 +1,40 @@
+# Exercise 1
+classes_held = int(input('Enter The Amount of Classes Held: '))
+classes_attended = int(input('Enter How Many Classes You Have Attended: '))
+percentage = (classes_attended/classes_held)*100
+if (percentage < 75):
+    print('You have attended', percentage, 'classes, you are not allowed to sit for the exam')
+
+else:
+    print('You have attended', percentage, 'classes, you are allowed to sit for the exam')
+
+# Exercise 2
+unit = int(input('Enter Units Purchased: '))
+spent = unit * 100
+if (spent>=1000):
+    print(spent-(spent*0.10), 'dollars is your total price and you purchased', unit, 'units')
+elif (0<spent<1000):
+    print(spent, 'is your total price')
+elif (spent<=0):
+    print('Error you cant purchase negative units')
+
+#Exercise 3
+string = str(input('Enter any string: '))
+string_length = len(string)
+if (string_length % 4 == 0):
+    print(string[::-1])
+
+else:
+    print(string)
+
+# Exercise 4
+string1 = str(input('Enter any string: '))
+string2 = str(input('Enter any string: '))
+if (string1 == string2):
+    print('The strings are the same')
+
+else:
+    print('The strings are not the same')
+
+
+
