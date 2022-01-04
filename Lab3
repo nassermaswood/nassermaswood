@@ -1,0 +1,141 @@
+Exercise 1
+grade = int(input('Enter Your Grade: '))
+
+if grade in range (90,100):
+    print('You have received a A!')
+
+if grade in range (80,89):
+    print('You have received a B')
+
+if grade in range (70,79):
+    print('You have received a C')
+
+if grade in range (65,69):
+    print('You have received a D')
+
+elif (grade <= 64):
+    print('You have a F')
+
+#Exercise 2
+length = float(input('Enter Length: '))
+width = float(input('Enter Width: '))
+area = length * width
+perimeter = 2 * (length + width)
+if(area > perimeter):
+    print('The area is larger than the perimeter')
+else:
+    print('The perimeter is larger than the area')
+
+Exercise 3
+int1 = int(input('Enter the fist integer: '))
+int2 = int(input('Enter the second integer: '))
+int3 = int(input('Enter the third integer: '))
+int4 = int(input('Enter the fourth integer: '))
+if(int2 < int1 and int2 < int3 and int2 < int4):
+    print(int2, 'is the smallest integer')
+
+elif(int1 < int2 and int1 < int3 and int1 < int4):
+    print(int1,'is the smallest integer')
+
+elif(int3 < int1 and int3 < int2 and int3 < int4):
+    print(int3, 'is the smallest integer')
+
+elif(int4 < int1 and int4 < int2 and int4 < int3):
+    print(int4, 'is the smallest integer')
+
+elif(int1 == int2 == int3 == int4):
+    print(int1, 'is the smallest integer and all the integers entered are equal')
+
+elif(int1 == int2 and int1 < int4 and int1 < int3):
+    print(int1, 'is the smallest integer and int1 and int2 are equal')
+
+elif(int1 == int3 and int1 < int2 and int1 < int4):
+    print(int1, 'is the smallest integer and int1 and int3 are equal')
+
+elif(int1 == int4 and int1 < int2 and int1 < int3):
+    print(int1, 'is the smallest integer and int1 and int4 are equal')
+
+elif(int2 == int3 and int2 < int1 and int2 < int4):
+    print(int2, 'is the smallest integer and int2 and int3 are equal')
+
+elif(int2 == int4 and int2 < int1 and int2 < int3):
+    print(int2, 'is the smallest integer and int2 and int4 are equal')
+
+elif(int3 == int4 and int3 < int2 and int3 < int1):
+    print(int3, 'is the smallest integer and int3 and int4 are equal')
+
+elif(int1 == int2 == int3 and int1<int4):
+    print(int1, 'is the smallest integer and int1, int2, int3 are equal')
+
+elif(int1 == int2 == int4 and int1<int3):
+    print(int1, 'is the smallest integer and int1, int2, and int4 are equal')
+
+elif(int1 == int3 == int4 and int1<int2):
+    print(int1, 'is the smallest integer and int1, int3, and int4 are equal')
+
+elif(int2 == int3 == int4 and int2<int1):
+    print(int2, 'is the smallest integer and int2, int3, and 4 are equal')
+
+
+
+#Exercise 5
+days_of_week = str(input('Enter the day of the week: '))
+if(days_of_week == 'Monday'):
+    date = 'weekday'
+elif(days_of_week == 'Tuesday'):
+    date = 'weekday'
+elif(days_of_week == 'Wednesday'):
+    date = 'weekday'
+elif(days_of_week == 'Thursday'):
+    date = 'weekday'
+elif(days_of_week == 'Friday'):
+    date = 'weekday'
+elif(days_of_week == 'Sunday'):
+    date = 'weekend'
+elif(days_of_week == 'Monday'):
+    date = 'weekend'
+
+
+age = int(input('Enter your age: '))
+
+default_price = 8.00
+week_discount11 = 8 -(default_price*0.40)
+week_discount22 = 8 -(default_price*0.25)
+week_discount60 = 8 -(default_price*0.25)
+tax11 = week_discount11 * 0.10
+price11 = week_discount11 + tax11
+tax22 = week_discount22 * 0.10
+price22 = week_discount22 + tax22
+tax60 = week_discount60 * 0.10
+price60 = week_discount60 + tax60
+
+if(age<11 and date == 'weekday'):
+    print('The ticket price is ', price11)
+
+elif(11<age<22 and date == 'weekday'):
+    print('The price of the ticket is', price22)
+
+elif(age>60 and date == 'weekday'):
+    print('The price of the ticket is', price60)
+
+elif(date == 'weekend'):
+    print('The price of the ticket is', default_price)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
