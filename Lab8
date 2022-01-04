@@ -1,0 +1,155 @@
+john = ('intro to comp', 12, 'Business', 'Freshman')
+robert = ('Biology', 22, 'Biophysics','Sophomore')
+arif = ('Physics',14, 'Engineering', 'Senior')
+
+list = [john, robert, arif]
+(course, roll_num, major, year) = john
+
+print('course name = ', course)
+
+a = 10
+b = 5
+
+(a,b) = (b,a)
+print(a,b)
+
+x = 7
+z = 12
+temp = z
+temp2 = x
+z = temp2
+x = temp
+print(x,z)
+
+Swap 4 variables using a tuple, a = 9, b = 5, c = 3, d = 7
+a = 3
+b = 5
+c = 7
+d = 9
+
+(a,b,c,d) = (d,b,a,c)
+print(a,b,c,d)
+
+def area_perimeter (a,b=10):
+    area = a*b
+    perimeter = 2*a+2*b
+    #create a tuple that takes the values of area and perimeter
+    ret_val = (area, perimeter) # we are packing this tuple
+    #return the tuple as one variable
+    return ret_val
+
+#main program
+rect1 = area_perimeter(3,5)
+(area, peri) = rect1 #unpack the tuple
+print (rect1)
+print (area)
+print (peri)
+
+
+tup1 = ('apple','orange', 'banana', 'grape', 'banana')
+print(tup1.count('banana'))
+print(tup1.index('orange'))
+
+if 'orange' in tup1:
+    print('orange is in tup1')
+else:
+    print('orange is not in tup1')
+
+# Now beginning to look at dictionaries
+
+dict1 = {"num1": "Donald", "num2":"Mickey", "num3":"Bugs", "num4":"Daffy"}
+print (dict1)
+
+print (dict1["num1"])
+print (dict1["num2"])
+print (dict1["num3"])
+print (dict1["num4"])
+
+marks_in_exam = {"Donald": 71, "Mickey":30, "Bugs":30, "Daffy":32, "Daffy":30 }
+#dictionary stored in memory would be something like this
+#Doanlad: 71, Mickey:63, Bugs:98, Daffy:30
+
+print ("before chaging the marks :", marks_in_exam)
+#this will print the LAST value of Daffy since it is processed left to right
+print (marks_in_exam['Daffy'])
+# del marks_in_exam["Daffy"]
+# print (marks_in_exam['Daffy'])
+#the dictionary now looks like
+##Doanlad: 71, Mickey:63, Bugs:98
+#length of a dictionary using unique keys
+print ("the number of pairs in the dictionary is ", len(marks_in_exam))
+
+#dictionary is changeable
+print (marks_in_exam["Donald"])
+marks_in_exam["Donald"] = 78
+print ("after chaging Donald's marks :", marks_in_exam)
+
+#you can add new keys to a dictionary
+marks_in_exam["Spongebob"] = 67
+print (marks_in_exam)
+
+marks_in_exam["Narendra"] = 90
+print (marks_in_exam)
+#arithmetic operations
+marks_in_exam["Mickey"] += 10
+print ("after chaging Mickey's marks :", marks_in_exam)
+
+#deleting items key:value pair
+del marks_in_exam["Daffy"]
+print ("after deleting Daffy :", marks_in_exam)
+
+dict1 = {1: "Donald", 2:"Mickey", 3:"Bugs", 4:"Daffy", "five":"SpongeBob"}
+print (dict1)
+print (type(dict1))
+# #a class has a bunch of methods which manipulate the data in the class
+# #
+# # #use the keys method to get all the keys in the dictionary
+print  (dict1.keys() )
+# #
+# # #use the values method to get all the values in the dictionary
+# print ( dict1.values() )
+#
+# #use the keys method to iterate through all the keys in the dictionary
+# for k in dict1.keys():
+#      print (k)
+#
+for k in dict1.keys():
+     print (k)
+     print (dict1[k])
+
+# #use the keys method to iterate through each key in the dictionary and then use its value
+for k in dict1.keys():
+    if (dict1[k] == "Bugs"):
+        print ("Value Bugs has key :", k)
+#
+# #use the value method to iterate through each value in the dictionary
+# print (dict1.values())
+for val in dict1.values():
+    print (val)
+
+# #items method outputs the key:value pairs are tuples
+print (list (dict1.items()))
+
+word = "This is American University in Washington DC."
+
+letter_count ={}
+# for char in word:
+#     letter_count[char] = letter_count.get(char, 0)+1
+
+for char in word:
+    if char in letter_count.keys():
+        letter_count[char] += 1
+    else:
+        letter_count[char] = 1
+
+for key in sorted(letter_count.keys()):
+    if letter_count[key] >1:
+        print (key, letter_count[key])
+
+print (letter_count)
+
+# for val in letter_count.values():
+#     maxval = sorted(letter_count.values())[-1]
+#
+# maxletter = letter_count[maxval]
+# print (maxletter)
