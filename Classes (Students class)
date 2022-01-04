@@ -1,0 +1,94 @@
+class Student:
+    name = ''
+    dob = ''
+    gender = ''
+    rollnum = ''
+    major = ''
+
+student1 = Student()
+student1.name = 'Nasser'
+student1.dob = '04/10/2003'
+student1.rollnum = 'Au2025'
+print(student1.name, student1.dob, student1.rollnum,)
+
+student2 = Student()
+student2.name = 'Joe'
+student2.dob = '02/10/1957'
+student2.major = 'Political Science'
+
+print(student2.name, student2.dob, student2.major)
+
+print(type(student1))
+x = 10
+print(type(x))
+
+class Student():
+    def __init__(self, name, dob, gender, rollnum, major, gpa = 0.0):
+        self.name = name
+        self.dob = dob
+        self.gender = gender
+        self.rollnum = rollnum
+        self.major = major
+        self.gpa = gpa
+
+
+student1 = Student('John', '1/1/2000', 'm', 'AU123', 'compsci',)
+print(student1.name, student1.dob, student1.gpa)
+student1.gpa = 3.90
+
+student2 = Student('Jane', '2/2/2020', 'f', 'AU231','polisci')
+student2.gpa = 3.4
+student3 = Student('Nasser', '4/10/2003', 'm','AU918', 'engineering')
+student3.gpa = 4.0
+student4 = Student('Omar', '1/8/2004', 'm','AU832', 'physics')
+student4.gpa = 2.8
+
+class Student():
+    def __init__(self, name, dob, gender, rollnum, major, gpa = 0.0):
+        self.name = name
+        self.dob = dob
+        self.gender = gender
+        self.rollnum = rollnum
+        self.major = major
+        self.gpa = gpa
+
+
+john = Student('John Last', '1/1/2000', 'm', 'AU123', 'compsci')
+
+def get_name(self):
+    return self.name
+def get_dob(self):
+    return self.dob
+def get_rollnum(self):
+    return self.rollnum
+def get_gender(self):
+    return self.gender
+def get_major(self):
+    return self.major
+def get_gpa(self):
+    return self.gpa
+
+def set_name(self,name):
+    self.name = name
+def set_gpa(self,gpa):
+    if gpa <= 4 and gpa >= 0:
+        self.gpa = gpa
+    else:
+        print('please enter a proper gpa')
+
+def set_rollnum(self,rollnum):
+    self.rollnum = rollnum
+
+def isDeansList(self):
+    if self.gpa >= 3.9:
+        return 1
+    else:
+        return 0
+
+if john.isDeansList():
+    print("Congrats! John is in the Dean's list")
+
+if jane.isDeansList():
+    print("Congrats! Jane is in the Dean's list")
+
+
