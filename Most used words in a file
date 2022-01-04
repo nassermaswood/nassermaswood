@@ -1,0 +1,42 @@
+###### IN module.py
+from collections import Counter
+def function1(file_name):
+    file = open(file_name, "r")
+    contents = file.read()
+    return contents
+
+def function2(string):
+    words = string.split(' ')
+    wordcounts = Counter(words)
+    output = []
+    cnt = 0
+    for key,value in wordcounts.most_common():
+        if cnt == 10:
+            break
+        output.append(key)
+        cnt = cnt + 1
+    return output
+
+def function3(file_name,list):
+    file = open(file_name,'w')
+    for word in list:
+        file.write(word+'\n')
+    file.close()
+    
+###### IN main.py
+import module
+
+def main():
+    contents = module.function1('valleyoffear.txt')
+    mostusedwords = module.function2(contents)
+    module.function3('mostusedwords.txt',mostusedwords)
+if __name__ == '__main__':
+    main()
+
+###### IN valleyoffear.txt
+
+ANY TEXT YOU WANT TO APPLY THE FUNCTIONS TO 
+
+
+    
+    
