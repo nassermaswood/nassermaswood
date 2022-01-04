@@ -1,0 +1,23 @@
+a = 1
+b = 1
+count = 0
+# creates a list with the first two elements
+list = [1,1]
+# this range gives us enough to get only the FIRST 10 even numbers in the sequence
+while count < 30:
+    next_term = a + b
+    count += 1
+    a = b
+    b = next_term
+    # attach every element in the sequence to the list
+    list.append(next_term)
+# create a new empty list for only the even numbers in the sequence
+list_even = []
+# scanning through the previous list of the sequence searching for even numbers
+for n in list:
+    if n % 2 == 0:
+        # attach only the even numbers in the sequence to the new list
+        list_even.append(n)
+    # to keep the iterations going on
+    n += 1
+print(list_even)
