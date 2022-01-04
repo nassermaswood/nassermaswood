@@ -1,0 +1,59 @@
+def distance_two_points(x1,y1,x2,y2):
+    distance = (x2-x1)**2
+    distance2 = (y2-y1)**2
+    root = (distance + distance2)**(1/2)
+    return root
+
+x1 = int(input('Enter a number: '))
+y1 = int(input('Enter a number: '))
+x2 = int(input('Enter a number: '))
+y2 = int(input('Enter a number: '))
+
+print(distance_two_points(x1,y1,x2,y2),'units')
+
+def ticket_price(day_of_week, age, price=8 , tax=0.10):
+    if day_of_week in date:
+        discount = 0.10
+        if 0 < age < 11:
+            new_disc = discount + 0.30
+        elif 11 <= age < 22:
+            new_disc = discount + 0.15
+        elif 22 <= age > 60:
+            new_disc = discount + 15
+    else:
+        if 0 < age < 11:
+            new_disc = 0.30
+        elif 11 <= age < 22:
+            new_disc = 0.15
+        elif 22 <= age > 60:
+            new_disc = 0.15
+
+    price1 = price - (new_disc * price)
+    price2 = price1 + (price1 * tax)
+    return price2
+
+date = ['monday','tuesday','wednesday','thursday','friday']
+week = str.lower((input('Enter the day of the week: ')))
+day_of_week = week.strip()
+age = int(input('Enter your age: '))
+print(ticket_price(day_of_week,age),'dollars')
+
+def calculator(int1,int2,sign):
+    if sign == '+':
+       calc = int1 + int2
+    elif sign == '/':
+        calc = int1/int2
+    elif sign == '*':
+        calc = int1 * int2
+    elif sign == '-':
+        calc = int1 - int2
+    elif sign == '^':
+        calc = (int1)**(int2)
+    return calc
+
+int1 = float(input('Enter a number: '))
+int2 = float(input('Enter a number: '))
+sign = str(input('Enter a sign: ')).strip()
+print(int1,sign, int2, '=', calculator(int1,int2,sign))
+
+
