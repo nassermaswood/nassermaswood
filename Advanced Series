@@ -1,0 +1,41 @@
+
+
+a0 = 4
+r = 6
+d = 3
+list = [a0]
+def series(a0,r,d):
+    if len(list) == 50:
+        return
+    else:
+        next_a = r * a0 + d
+        list.append(next_a)
+        series(next_a,r,d)
+
+(series(a0,r,d))
+print(list)
+
+
+17
+
+list = [x*x if x % 5==0 else x*x*x if x % 3 == 0 and x % 4 == 0 else x for x in range(100)]
+print(list)
+
+18
+
+a = 1
+b = 1
+
+list = []
+list.append(b/a)
+for i in range(50):
+      list.append(1 + 1/list[len(list)-1])
+print(list[45:50])
+
+a(n+2) = a(n+1) + a_n
+a_n+1 / a_n
+a_n+2 / a_n+1
+(a_n+1 + a_n) / a_n+1
+
+list = [x*x if x % 5==0 else x*x*x if x % 3 == 0 and x % 4==0 else x for x in range(100)]
+print(list)
