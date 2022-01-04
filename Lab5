@@ -1,0 +1,80 @@
+# Activity 1
+x = int(input('Enter Number Of List Elements: '))
+list = []
+for i in range (0,x):
+    inputs = int(input())
+    list.append(inputs)
+
+sum = sum(list)
+if sum % 5 == 0:
+    print('Yes')
+else:
+    print('No')
+
+print('The sum is', sum)
+
+
+# Activity 3
+
+list = [95,45,65,21,89,83,37,56,97,28]
+max = max(list)
+min = min(list)
+avg = sum(list)/len(list)
+print('The sum of all the grades is',sum(list))
+print('The highest grade is', max)
+print('The lowest grade is', min)
+print('The class average is', avg)
+print('The length of the list is',len(list))
+
+# Alternative 3
+list2 = []
+x = int(input('Enter How Many Grades There Are: '))
+for i in range(0,x):
+    grades = int(input('Enter The Grades: '))
+    list2.append(grades)
+print('The Max Grade Was',min(list2))
+print('The Lowest Grade Was',max(list2))
+print('The average Was', sum(list2)/len(list2))
+
+# Activity 4
+list1 = []
+list2 = []
+values = int(input('Enter How Many Elements in the first list: '))
+values2 = int(input('Enter How Many Elements in the second list: '))
+
+for i in range (0,values):
+    listvals = int(input('Enter First List Values: '))
+    list1.append(listvals)
+
+for i in range (0,values2):
+    listvals2 = int(input('Enter Second List Values: '))
+    list2.append(listvals2)
+
+newlist = list1 + list2
+list.sort(newlist)
+list.reverse(newlist)
+print(newlist)
+
+# Activity 5
+list = [3,12,6,3,6,7,3,2,1,7,3,23,7,4,3,1,6]
+
+times3 = list.count(3)
+times6 = list.count(6)
+
+print('3 occurs',times3, 'times\n')
+print('6 occurs', times6, 'times\n')
+if times3 < times6:
+    print('6 occurs more times than 3 in the list')
+else:
+    print('3 occurs more times than 6 in the list')
+
+times3 = 0
+times6 = 0
+for i in list:
+    if i == 3:
+        times3 =+ i + 1
+for i in list:
+    if i == 6:
+        times6 =+ i + 1
+
+
