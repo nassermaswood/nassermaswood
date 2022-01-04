@@ -1,0 +1,40 @@
+file = open("demo.txt", "r")
+print(file.read())
+
+for i in range(len(demo)
+
+def writeNumList(file):
+
+def addToNumList(file):
+
+def readNumList(file):
+    def writeNumList(file):
+        file_handle = open(file, "w")
+        file_handle.write("1 2 3 4 5 6 7 8 9 10")
+        file_handle.close()
+
+    def addToNumList(file, list):
+        file_handle = open(file, "a")
+        for i in range(len(list)):
+            file_handle.write(str(list[i]))
+        file_handle.close()
+
+    def readNumList(file):
+        file_handle = open(file, "r")
+        file_data = file_handle.read()
+        print(file_data)
+        file_handle.close()
+import modulelab
+file="test2.txt"
+nums=[0,1,2,3,4]
+modulelab.writeNumList(file)
+modulelab.addToNumList(file,nums)
+modulelab.readNumList(file)
+
+
+import modulelab
+file="test2.txt"
+nums=[0,1,2,3,4]
+modulelab.writeNumList(file)
+modulelab.addToNumList(file,nums)
+modulelab.readNumList(file)
