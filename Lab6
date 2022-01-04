@@ -1,0 +1,63 @@
+Exercise 1
+Initialize sum to 0
+sum = 0
+for i in range (40,101):
+    # Add each i in the range to the sum
+    sum += i
+print('The sum of numbers from 40 to 100 is', sum, '\n')
+
+Exercise 2
+for i in range (1400,2001):
+    #Condition to check whether they are divisible by 7 and 9
+    if i % 7 == 0 and i % 9 == 0:
+         print(i, 'is divisible by 7 and 9')
+
+Exercise 3
+words = 0
+for i in 'Understanding that hard problems can be solved by step-by-step algorithmic processes (and having technology to execute these algorithms for us) is one of the major breakthroughs that has had enormous benefits. So while the execution of the algorithm may be boring and may require no intelligence, algorithmic or computational thinking — i.e. using algorithms and automation as the basis for approaching problems — is rapidly transforming our society. Some claim that this shift towards algorithmic thinking and processes is going to have even more impact on our society than the invention of the printing press. And the process of designing algorithms is interesting, intellectually challenging, and a central part of what we call programming.':
+    if i == ' ':
+        words += 1
+wordsfinal = words + 1
+print(wordsfinal)
+
+Exercise 4
+str1 = 'TTATGCTCAGTAAGAGAGTCTTACGAAT'
+A = 0
+T = 0
+C = 0
+G = 0
+list = []
+for i in str1:
+    if i == 'A':
+        A += 1
+    elif i == 'T':
+        T += 1
+    elif i == 'C':
+        C += 1
+    elif i == 'G':
+        G += 1
+list.append(A)
+list.append(C)
+list.append(G)
+list.append(T)
+print(list)
+
+Exercise 5
+for i in range (120,221):
+    if i % 1 == 0 and i % i == 0:
+        print(i,'is a prime number')
+
+Exercise 6
+num = int(input('Enter Any Number: '))
+i = 1
+while i <= num:
+    if num % i == 0:
+        print('Factors of', num, 'are', i)
+    i += 1
+
+
+
+
+
+
+
