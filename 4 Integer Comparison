@@ -1,0 +1,96 @@
+int1 = int(input('Enter the fist integer: '))
+int2 = int(input('Enter the second integer: '))
+int3 = int(input('Enter the third integer: '))
+int4 = int(input('Enter the fourth integer: '))
+if(int2 < int1 and int2 < int3 and int2 < int4):
+    print(int2, 'is the smallest integer')
+
+elif(int1 < int2 and int1 < int3 and int1 < int4):
+    print(int1,'is the smallest integer')
+
+elif(int3 < int1 and int3 < int2 and int3 < int4):
+    print(int3, 'is the smallest integer')
+
+elif(int4 < int1 and int4 < int2 and int4 < int3):
+    print(int4, 'is the smallest integer')
+
+elif(int1 == int2 == int3 == int4):
+    print(int1, 'is the smallest integer and all the integers entered are equal')
+
+elif(int1 == int2 and int1 < int4 and int1 < int3):
+    print(int1, 'is the smallest integer and int1 and int2 are equal')
+
+elif(int1 == int3 and int1 < int2 and int1 < int4):
+    print(int1, 'is the int1 = int(input('Enter the fist integer: '))
+int2 = int(input('Enter the second integer: '))
+int3 = int(input('Enter the third integer: '))
+int4 = int(input('Enter the fourth integer: '))
+if(int2 < int1 and int2 < int3 and int2 < int4):
+    print(int2, 'is the smallest integer')
+
+elif(int1 < int2 and int1 < int3 and int1 < int4):
+    print(int1,'is the smallest integer')
+
+elif(int3 < int1 and int3 < int2 and int3 < int4):
+    print(int3, 'is the smallest integer')
+
+elif(int4 < int1 and int4 < int2 and int4 < int3):
+    print(int4, 'is the smallest integer')
+
+elif(int1 == int2 == int3 == int4):
+    print(int1, 'is the smallest integer and all the integers entered are equal')
+
+elif(int1 == int2 and int1 < int4 and int1 < int3):
+    print(int1, 'is the smallest integer and int1 and int2 are equal')
+
+elif(int1 == int3 and int1 < int2 and int1 < int4):
+    print(int1, 'is the smallest integer and int1 and int3 are equal')
+
+elif(int1 == int4 and int1 < int2 and int1 < int3):
+    print(int1, 'is the smallest integer and int1 and int4 are equal')
+
+elif(int2 == int3 and int2 < int1 and int2 < int4):
+    print(int2, 'is the smallest integer and int2 and int3 are equal')
+
+elif(int2 == int4 and int2 < int1 and int2 < int3):
+    print(int2, 'is the smallest integer and int2 and int4 are equal')
+
+elif(int3 == int4 and int3 < int2 and int3 < int1):
+    print(int3, 'is the smallest integer and int3 and int4 are equal')
+
+elif(int1 == int2 == int3 and int1<int4):
+    print(int1, 'is the smallest integer and int1, int2, int3 are equal')
+
+elif(int1 == int2 == int4 and int1<int3):
+    print(int1, 'is the smallest integer and int1, int2, and int4 are equal')
+
+elif(int1 == int3 == int4 and int1<int2):
+    print(int1, 'is the smallest integer and int1, int3, and int4 are equal')
+
+elif(int2 == int3 == int4 and int2<int1):
+    print(int2, 'is the smallest integer and int2, int3, and 4 are equal')
+smallest integer and int1 and int3 are equal')
+
+elif(int1 == int4 and int1 < int2 and int1 < int3):
+    print(int1, 'is the smallest integer and int1 and int4 are equal')
+
+elif(int2 == int3 and int2 < int1 and int2 < int4):
+    print(int2, 'is the smallest integer and int2 and int3 are equal')
+
+elif(int2 == int4 and int2 < int1 and int2 < int3):
+    print(int2, 'is the smallest integer and int2 and int4 are equal')
+
+elif(int3 == int4 and int3 < int2 and int3 < int1):
+    print(int3, 'is the smallest integer and int3 and int4 are equal')
+
+elif(int1 == int2 == int3 and int1<int4):
+    print(int1, 'is the smallest integer and int1, int2, int3 are equal')
+
+elif(int1 == int2 == int4 and int1<int3):
+    print(int1, 'is the smallest integer and int1, int2, and int4 are equal')
+
+elif(int1 == int3 == int4 and int1<int2):
+    print(int1, 'is the smallest integer and int1, int3, and int4 are equal')
+
+elif(int2 == int3 == int4 and int2<int1):
+    print(int2, 'is the smallest integer and int2, int3, and 4 are equal')
