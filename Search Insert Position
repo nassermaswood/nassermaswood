@@ -1,0 +1,15 @@
+## GIVEN A LIST(nums) AND A TARGET NUMBER (target) find the index of where it is in the list, if it is not in the list find out where it would be in the list
+
+def searchInsert(nums, target):
+    for i in range(len(nums)):
+        if nums[i] == target:
+            return i
+
+        else:
+            nums.append(target)
+            nums.sort()
+            for i in range(len(nums)):
+                if nums[i] == target:
+                    return i
+
+
