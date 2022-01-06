@@ -1,0 +1,16 @@
+### FUNCTION TO GET THE LENGTH OF THE LAST WORD IN ANY STRING
+
+def lengthOfLastWord(s):
+    s = s.strip(' ')
+    list1 = list(s)
+    list1 = list1[::-1]
+    print(list1)
+    substring = " "
+    if substring in list1:
+        for i in range(len(list1)):
+            if list1[i] == ' ':
+                return i
+    else:
+        return len(list1)
+
+
